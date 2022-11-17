@@ -1,6 +1,7 @@
 public interface armInterface {
-    void pickUp(block Li);
-    void putDown(block Li);
-    void stack(block Li);
-    void unstack(block Li);
+    void pickUp(block Li, location loc);
+    void putDown(block Li, location loc);
+    void stack(block Li, location loc);
+    void unstack(block Li, location loc);
+    void move(block Li, location start, location end);
 }

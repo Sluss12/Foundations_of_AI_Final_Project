@@ -1,10 +1,7 @@
 public interface blockInterface {
-    block above = new block();
-    block on = new block();
-    boolean clear = true;
-    boolean table = true;
-    block above();
-    block on();
+    boolean above(block B);
+    boolean above(location Li);
+    boolean on(block B);
     boolean clear();
     boolean table();
 }
